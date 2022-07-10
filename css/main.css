@@ -92,59 +92,47 @@
     html {
       font-size: 16px;
       box-sizing: border-box;
-      min-width: 374px;
+      min-width: 359px;
       margin: 0;
       padding: 0;
     }
 
     body {
-      min-height: 93vh;
-      padding: 28px 36px;
+      padding: 1.75rem 2.25rem;
       font-size: 1em;
       font-family: 'Open Sans', sans-serif;
       background-image:url('../images/bg-mobile.svg');
       background-color: hsl(257, 40%, 49%);
       background-repeat: no-repeat;
-      background-size: 393px 389px;
+      background-size: 22.625rem 24rem;
       display: flex;
       flex-direction: column;
-      gap: 9vh;
     }
 
-    nav {
-      display: flex;
-      align-self: flex-start;
+    header {
+      padding: 0 9.688rem 4.375rem 0;
     }
-
+        
     nav img {
-      height: 36px;
-    }
-
-    .top-section figure {
-      width: 90%;
-      margin: 50px 0 0 0;
-      padding: 0;
-    }
-
-    img {
       width: 100%;
     }
-
+    
+    .top-section figure {
+      width: 90%;
+      margin: 3.125rem 0 0 0;
+      padding: 0;
+    }
+    
     .content-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 7.5vh;
+      gap: 5.719rem;
     }
-
-    .mockup-image {
-      width: 100%;
-      display: flex;
-    }
-
+    
     .mockup-image img {
       width: 100%;
     }
-
+    
     .title-description {
       color:hsl(0, 0%, 100%);
       text-align: center;
@@ -152,34 +140,34 @@
       flex-direction: column;
       align-items: center;
     }
-
-    .title-description h1 {
+    
+    .title-description .title {
       font-family: 'Poppins', sans-serif;
       font-size: 1.5em;
       text-transform: capitalize;
       line-height: 1.5;
       margin: 0;
     }
-
-    .title-description p {
+    
+    .title-description .huddle-description {
       font-family: 'Open Sans', sans-serif;
       font-size: 0.9688em;
       line-height: 1.5;
-      margin: 15px 12px 0 12px;
+      margin: 0.938rem 0.75rem 0 0.75rem;
     }
-
+    
     .register-button {
       background-color: hsl(0, 0%, 100%);
-      width: 226px;
-      height: 50px;
-      border-radius: 55px;
-      margin: 20px 25px 25px 25px;
-      box-shadow: 6px 8px 9px 0 	hsl(257, 40%, 40%);
+      width: 14.125rem;
+      height: 3.125rem;
+      border-radius: 3.438rem;
+      margin: 1.25rem 1.563rem 1.563rem;
+      box-shadow: 0.375rem 0.5rem 0.563rem 0 	hsl(257, 40%, 40%);
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
+    
     .register-button a {
       font-family: 'Poppins', sans-serif;
       font-size: 0.9688em;
@@ -187,42 +175,42 @@
       color: hsl(257, 40%, 49%);
       text-decoration: none;
     }
-
+    
     .register-button:hover {
       background-color: hsl(300, 69%, 71%);
     }
-
+    
     .contact {
       display: flex;
       justify-content: center;
       margin-top: auto;
+      padding: 1.25rem 0 0 0;
     }
-
+    
     .contact .social-icons {
       display: flex;
-      gap: 12px;
+      gap: 0.75rem;
     }
-
+    
     .contact .social-icons a {
-      border: 1px solid hsl(0, 0%, 100%);
-      border-radius: 60px;
+      border: 0.063rem solid hsl(0, 0%, 100%);
+      border-radius: 3.75rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 4px;
+      padding: 0.25rem;
+      text-decoration: none;
     }
-
+    
     .contact .social-icons i {
       color:hsl(0, 0%, 100%);
-      width: 1.75vh;
-      height: 1.75vh;
+      width: 1.334rem;
+      height: 1.334rem;
     }
-
+    
     .contact .social-icons p:hover {
       color: hsl(300, 69%, 71%);
     }
-
-    
 
 
   /* ==========================================================================
@@ -312,80 +300,163 @@
       These examples override the primary ('mobile first') styles.
       Modify as content requires.
       ========================================================================== */
-   
-   @media only screen and (min-width: 1440px) {
-     /*Desktop styles*/
+
+      
+   @media only screen and (min-width: 760px) {
+     /*Tablet styles*/
+
+     body {
+      background-size: 47.5rem 44.25rem;
+     }
+
+     nav img {
+      width: 35%;
+     }
+
+     .mockup-image img {
+      width: 95%;
+      margin: 0 0 0 0.938rem;
+     }
+
+     .title-description .title {
+      font-size: 2.125em;
+      margin: 0 7.75rem;
+     }
+
+     .title-description .huddle-description {
+      font-size: 1em;
+      margin: 0.938rem 5rem 0;
+     }
+
+     .register-button {
+      width: 18.5rem;
+      height: 2.813rem;
+      margin: 1.875rem 1.563rem 1.563rem;
+     }
+
+     .contact .social-icons {
+      gap: 1.563rem;
+     }
+   }
+
+   @media only screen and (min-width: 1220px) {
+    /*Laptop styles*/
 
      body {
       background:hsl(257, 40%, 49%) url('../images/bg-desktop.svg');
       background-repeat: no-repeat;
-      background-size: contain;
-      gap: unset;
-      padding: 64px 13px 0 112px;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      padding: 3.75rem 0 0 4.375rem;
      }
 
      nav img {
-      height: 3.5vw;
-     }
-
-     main {
-      margin: 6px 37px 0 0;
+      width: 20%;
      }
 
      .content-wrapper {
       display: flex;
       flex-direction: row;
-      gap: 80px;
-      padding-top: 10vh;
+      align-items: center;
+      gap: 0;
+     }
+
+     .mockup-image {
+      margin: 4.375rem 0 0 auto;
+      width: 43.563rem;
      }
 
      .mockup-image img {
-      width: 200%;
+      width: 100%;
+      margin: 0;
      }
 
      .title-description {
       text-align: left;
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      gap: 32px;
-      margin-top: 40px;
-      margin-left: 185px;
      }
 
-     .title-description h1 {
+     .title-description .title {
       font-size: 2.375em;
-      margin: 0 23px;
+      text-align: left;
+      margin: 0 2.938rem;
      }
 
-     .title-description p {
-      font-size: 1.0625em;
-      margin: 0 23px;
-     }
-
-     .register-button {
-      width: 189px;
-      margin-top: 0;
-     }
-
-     .register-button a {
-      font-size: 1.0625em;
+     .title-description .huddle-description {
+      font-size: 1.125em;
+      margin: 0.938rem 2.938rem 0;
      }
 
      .contact {
       justify-content: flex-end;
+      padding: 2.5rem 4.375rem 0 0;
      }
 
-     .contact .social-icons {
-      padding: 10px;
+     .register-button {
+      width: 12.5rem;
+      height: 3.438rem;
+      margin: 1.875rem 0 1.563rem 2.938rem;
+     }
+
+     .register-button a {
+      font-size: 1.125em;
      }
 
      .contact .social-icons a {
-      padding: 10px;
+      padding: 0.625rem;
+     }
+
+     .contact .social-icons i {
+      width: 1.188rem;
+      height: 1.188rem;
+     }
+
+   }
+
+   @media only screen and (min-width: 1440px) {
+     /*Desktop styles*/
+
+     body {
+      padding: 4rem 0 0 5rem;
+      overflow: hidden;
+     }
+
+     nav img {
+      width: 18%;
+     }
+
+     .content-wrapper {
+      padding: 1.25rem;
+     }
+
+     .mockup-image {
+      margin: 0;
+     }
+     
+     .title-description {
+      gap: 1.563rem;
+     }
+
+     .title-description .title {
+      font-size: 2.5em;
+      margin: 0 6.313rem;
+     }
+
+     .title-description .huddle-description {
+      font-size: 1.1875em;
+      margin: 0 6.313rem;
+     }
+
+     .register-button {
+      height: 3.75rem;
+      margin: 1.875rem 0 1.563rem 6.313rem;
+     }
+
+     .contact .social-icons {
+      padding: 0.625rem;
      }
     }
-
-    
     
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
